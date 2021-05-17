@@ -129,8 +129,10 @@ app.onSync((body) => {
         attributes: {
           pausable: true,
         },
-        // TODO: Add otherDeviceIds for local execution
-      }],
+        otherDeviceIds: [{
+          deviceId: 'deviceid123',
+        }], 
+     }],
     },
   };
 });
